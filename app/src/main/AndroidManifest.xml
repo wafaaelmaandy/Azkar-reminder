@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.viva.azkar">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon1"
+        android:label="صلى على النبى "
+        android:roundIcon="@drawable/icon1"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        >
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleTop"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="sensor">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".AzkarIncrementServise"
+            android:exported="false" />
+        <service
+            android:name=".AzkerReminderFirebaseJobService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.firebase.jobdispatcher.ACTION_EXECUTE" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".Setting" />
+        <activity android:name=".about"></activity>
+    </application>
+
+</manifest>
