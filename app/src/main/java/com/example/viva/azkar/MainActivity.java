@@ -54,7 +54,6 @@ public class MainActivity extends AppCompatActivity implements
         SharedPreferences.Editor editor = prefs.edit() ;
         editor.putInt("count",0);
         editor.apply();
-      AzkarNotification.remindUser(this);
 
     }
 
