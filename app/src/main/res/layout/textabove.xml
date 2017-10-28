@@ -19,7 +19,6 @@
         android:background="#beded2"
         android:ems="10"
         android:inputType="textMultiLine"
-        android:onClick="setting"
         android:padding="10dp"
         android:text="إن الله وملائكته يصلون على النبى ياأيها الذين آمنوا صلوا عليه وسلموا تسليما"
         android:textAlignment="center"

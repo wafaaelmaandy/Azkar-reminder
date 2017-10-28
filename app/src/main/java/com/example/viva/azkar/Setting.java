@@ -31,7 +31,7 @@ public class Setting extends AppCompatActivity {
         SharedPreferences.Editor editor = prefs.edit() ;
         editor.putInt("nmin",nmin);
         editor.apply();
-        Toast.makeText(this,"saved",Toast.LENGTH_SHORT).show();
+        Toast.makeText(this,"saved ! app will notify you every "+nmin/60 +"hour" + nmin%60 +"min",Toast.LENGTH_SHORT).show();
     }
 
 
