@@ -36,10 +36,10 @@ public class Reminder extends Application {
         return prefs.getInt("nmin",270);
 
     }
-    private  final static int REMINDER_INTERVAL_MINUTES = getmin(g());
+    private   static int REMINDER_INTERVAL_MINUTES = getmin(g());
 
-    private  final static int REMINDER_INTERVAL_SECONDS = (int) (TimeUnit.MINUTES.toSeconds(REMINDER_INTERVAL_MINUTES));
-    private  final  static int SYNC_FLEXTIME_SECONDS = REMINDER_INTERVAL_SECONDS;
+    private   static int REMINDER_INTERVAL_SECONDS = (int) (TimeUnit.MINUTES.toSeconds(REMINDER_INTERVAL_MINUTES));
+    private    static int SYNC_FLEXTIME_SECONDS = REMINDER_INTERVAL_SECONDS;
 
     private static final String REMINDER_JOB_TAG = "zeker_reminder_tag";
 

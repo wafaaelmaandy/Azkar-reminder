@@ -48,6 +48,7 @@ public class AzkarNotification {
                 .addAction(incremntZeker(context))
                 .addAction(ignoreReminderAction(context))
                 .setAutoCancel(true)
+
                 .setSound(Uri.parse("android.resource://" +"com.example.viva.azkar" + "/" + R.raw.mohammed)) ;
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
             notificationBuilder.setPriority(Notification.PRIORITY_HIGH);
